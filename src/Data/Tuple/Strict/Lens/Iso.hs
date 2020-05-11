@@ -9,7 +9,7 @@
 --
 -- Maintainer   : Emily Pillmore <emilypi@cohomolo.gy>
 -- Stability    : Experimental
--- Portability  : portable
+-- Portability  : FlexibleContexts, MPTC
 --
 -- This module exports 'Control.Lens.Iso.Swapped' and
 -- 'Control.Lens.Iso.Strict' instances for 'T1' through 'T9'

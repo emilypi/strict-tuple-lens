@@ -9,7 +9,7 @@
 --
 -- Maintainer   : Emily Pillmore <emilypi@cohomolo.gy>
 -- Stability    : Experimental
--- Portability  : portable
+-- Portability  : FlexibleContexts, MPTC
 --
 -- This module exports 'Control.Lens.Field.Field1' through
 -- 'Control.Lens.Field.Field19' instances for 'T1' through

@@ -11,7 +11,7 @@
 --
 -- Maintainer	: Emily Pillmore <emilypi@cohomolo.gy>
 -- Stability	: Experimental
--- Portability	: TypeFamilies, Rank2Types
+-- Portability	: TypeFamilies, UndecidableInstances, MPTC, FlexibleContexts
 --
 -- 'Control.Lens.Each.Each' instances for 'T1' through 'T9'
 --

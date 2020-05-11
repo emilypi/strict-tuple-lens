@@ -9,7 +9,7 @@
 --
 -- Maintainer   : Emily Pillmore <emilypi@cohomolo.gy>
 -- Stability    : Experimental
--- Portability  : portable
+-- Portability  : FlexibleContexts, MPTC
 --
 -- 'Control.Lens.Empty.AsEmpty' instances for 'T2' and 'T3'
 --
