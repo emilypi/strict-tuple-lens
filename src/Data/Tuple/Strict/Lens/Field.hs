@@ -1,6 +1,7 @@
 {-# language FlexibleContexts #-}
 {-# language FlexibleInstances #-}
 {-# language MultiParamTypeClasses #-}
+{-# OPTIONS_GHC -fno-warn-orphans #-}
 -- |
 -- Module       : Data.Tuple.Strict.Lens.Field
 -- Copyright    : (c) 2020 Emily Pillmore
@@ -14,7 +15,27 @@
 -- 'Control.Lens.Field.Field19' instances for 'T1' through
 -- 'T19'.
 --
-module Data.Tuple.Strict.Lens.Field where
+module Data.Tuple.Strict.Lens.Field
+( Field1(..)
+, Field2(..)
+, Field3(..)
+, Field4(..)
+, Field5(..)
+, Field6(..)
+, Field7(..)
+, Field8(..)
+, Field9(..)
+, Field10(..)
+, Field11(..)
+, Field12(..)
+, Field13(..)
+, Field14(..)
+, Field15(..)
+, Field16(..)
+, Field17(..)
+, Field18(..)
+, Field19(..)
+) where
 
 
 import Control.Lens

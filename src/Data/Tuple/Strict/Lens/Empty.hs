@@ -1,6 +1,7 @@
 {-# language FlexibleContexts #-}
 {-# language FlexibleInstances #-}
 {-# language MultiParamTypeClasses #-}
+{-# OPTIONS_GHC -fno-warn-orphans #-}
 -- |
 -- Module       : Data.Tuple.Strict.Lens.Empty
 -- Copyright    : (c) 2020 Emily Pillmore
@@ -12,7 +13,9 @@
 --
 -- 'Control.Lens.Empty.AsEmpty' instances for 'T2' and 'T3'
 --
-module Data.Tuple.Strict.Lens.Empty where
+module Data.Tuple.Strict.Lens.Empty
+( AsEmpty(..)
+) where
 
 
 import Control.Lens

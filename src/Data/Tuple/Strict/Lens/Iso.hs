@@ -1,6 +1,7 @@
 {-# language FlexibleContexts #-}
 {-# language FlexibleInstances #-}
 {-# language MultiParamTypeClasses #-}
+{-# OPTIONS_GHC -fno-warn-orphans #-}
 -- |
 -- Module       : Data.Tuple.Strict.Lens.Iso
 -- Copyright    : (c) 2020 Emily Pillmore
@@ -13,7 +14,10 @@
 -- This module exports 'Control.Lens.Iso.Swapped' and
 -- 'Control.Lens.Iso.Strict' instances for 'T1' through 'T9'
 --
-module Data.Tuple.Strict.Lens.Iso where
+module Data.Tuple.Strict.Lens.Iso
+( Swapped(..)
+, Strict(..)
+) where
 
 import Control.Lens.Iso (Swapped(..), Strict(..), iso)
 
@@ -31,43 +35,43 @@ instance Swapped T2 where
 instance Swapped (T3 x) where
   swapped = iso f f
     where
-      f (T3 x a b) = (T3 x b a)
+      f (T3 x a b) = T3 x b a
   {-# inline swapped #-}
 
 instance Swapped (T4 x y) where
   swapped = iso f f
     where
-      f (T4 x y a b) = (T4 x y b a)
+      f (T4 x y a b) = T4 x y b a
   {-# inline swapped #-}
 
 instance Swapped (T5 x y z) where
   swapped = iso f f
     where
-      f (T5 x y z a b) = (T5 x y z b a)
+      f (T5 x y z a b) = T5 x y z b a
   {-# inline swapped #-}
 
 instance Swapped (T6 x y z w) where
   swapped = iso f f
     where
-      f (T6 x y z w a b) = (T6 x y z w b a)
+      f (T6 x y z w a b) = T6 x y z w b a
   {-# inline swapped #-}
 
 instance Swapped (T7 x y z w v) where
   swapped = iso f f
     where
-      f (T7 x y z w v a b) = (T7 x y z w v b a)
+      f (T7 x y z w v a b) = T7 x y z w v b a
   {-# inline swapped #-}
 
 instance Swapped (T8 x y z w v u) where
   swapped = iso f f
     where
-      f (T8 x y z w v a b c) = (T8 x y z w v a c b)
+      f (T8 x y z w v a b c) = T8 x y z w v a c b
   {-# inline swapped #-}
 
 instance Swapped (T9 a b c d e f g) where
   swapped = iso k k
     where
-      k (T9 a b c d e f g h i) = (T9 a b c d e f g i h)
+      k (T9 a b c d e f g h i) = T9 a b c d e f g i h
   {-# inline swapped #-}
 
 -- ---------------------------------------------------------------- --

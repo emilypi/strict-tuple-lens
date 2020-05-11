@@ -3,6 +3,7 @@
 {-# language MultiParamTypeClasses #-}
 {-# language TypeFamilies #-}
 {-# language UndecidableInstances #-}
+{-# OPTIONS_GHC -fno-warn-orphans #-}
 -- |
 -- Module       : Data.Tuple.Strict.Lens.Each
 -- Copyright 	: (c) 2020 Emily Pillmore
@@ -14,7 +15,9 @@
 --
 -- 'Control.Lens.Each.Each' instances for 'T1' through 'T9'
 --
-module Data.Tuple.Strict.Lens.Each where
+module Data.Tuple.Strict.Lens.Each
+( Each(..)
+) where
 
 
 import Control.Lens

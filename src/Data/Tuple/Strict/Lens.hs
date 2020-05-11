@@ -1,3 +1,4 @@
+{-# OPTIONS_GHC -fno-warn-orphans #-}
 -- |
 -- Module       : Data.Tuple.Strict.Lens
 -- Copyright    : (c) 2020 Emily Pillmore
