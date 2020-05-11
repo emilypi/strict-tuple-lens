@@ -30,7 +30,7 @@ library
                      , Data.Tuple.Strict.Lens.Field
                      , Data.Tuple.Strict.Lens.Iso
 
-  build-depends:       base >=4.10 && <5.0
+  build-depends:       base >=4.11 && <5.0
                      , lens
                      , strict-tuple
 
