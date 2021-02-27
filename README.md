@@ -1,5 +1,5 @@
 # strict-tuple-lens
-![Build Status](https://github.com/emilypi/strict-tuple-lens/workflows/CI/badge.svg)
+![Build Status](https://github.com/emilypi/strict-tuple-lens/workflows/Haskell-CI/badge.svg)
 [![Hackage](https://img.shields.io/hackage/v/strict-tuple-lens.svg)](https://hackage.haskell.org/package/strict-tuple-lens)
 
 Optics and instances for the `strict-tuple` library. The following instances are defined:
